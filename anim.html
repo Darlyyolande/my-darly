@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.box {
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.child-box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: beige;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+}
+.transl {
+   animation-name: translate;
+   animation-duration: 3s;
+   animation-delay: 1s;
+   animation-iteration-count: infinite;
+}
+.box ~ div:hover {
+    background-color: skyblue;
+}
+.rotate {
+    animation-name: rotation;
+   animation-duration: 3s;
+   animation-delay: 1ms;
+   animation-iteration-count: infinite;
+}
+@keyframes translate {
+    from {
+       transform: translateY(200px);
+    }
+    to {
+        transform: translateY(-200px);
+}
+}
+.rotate:hover {
+    background-color: blue;
+}
+@keyframes rotation {
+    form {
+        transform: rotate(45deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.slide {
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-iteration-count: 3s;
+    animation-delay: 0.5s;
+}
+@keyframes {
+   to {transform:slide;
+   }
+}
+.colorate {
+    animation: color 6s infinite;
+}
+@keyframes {
+    0s,1s {
+        background-color:green;
+    }
+}
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div class="child-box transl" >Translate</div>
+    </div>
+    <div class="box">
+        <div class="child-box rotate">Rotate</div>
+    </div>
+    <div class="box">
+        <div class="child-box slide">Slide</div>
+    </div>
+    <div class="box">
+        <div class="child-box colorate">color change</div>
+    </div>
+</body>
+</html>

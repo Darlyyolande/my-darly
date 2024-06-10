@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex practice</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .flex-container {
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: blanchedalmond;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .all-items {
+            width: 200px;
+            height: 200px;
+            border: 5px solid rgba(171, 183, 197, 0.479);
+            margin: 20px;
+        }
+
+        .flex-item1 {
+            background-image: linear-gradient(45deg, red, pink, green);
+        }
+
+        .flex-item2 {
+            background-color: red;
+        }
+
+        .flex-item3 {
+            background-color: yellow;
+        }
+
+        .flex-item4 {
+            background-color: blue;
+        }
+
+        .flex-item01 {
+            background-color: pink;
+        }
+
+        .flex-item02 {
+            background-color: burlywood;
+        }
+
+        .flex-item03 {
+            background-color: paleturquoise;
+        }
+
+        .flex-item04 {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="all-items flex-item1"></div>
+        <div class="all-items flex-item2"></div>
+        <div class="all-items flex-item3"></div>
+        <div class="all-items flex-item4"></div>
+        <div class="all-items flex-item01"></div>
+        <div class="all-items flex-item02"></div>
+        <div class="all-items flex-item03"></div>
+        <div class="all-items flex-item04"></div>
+    </div> 
+    <div class="main-box">
+        <div class="all-boxes my-box01"></div>
+        <div class="all-boxes my-box02"></div>
+        <div class="all-boxes my-box03"></div>
+    </div>
+
+</html>

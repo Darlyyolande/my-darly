@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>CSS GRID</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 700px;
+            border: 3px solid red;
+            background-image: linear-gradient(rgb(95, 112, 95), rgb(128, 91, 91), rgb(177, 177, 125), rgb(228, 190, 190));
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: 200px;
+            padding: 10px;
+            margin: 15px;
+            gap: 5px;
+            grid-template-areas: "profil profil header header"
+                "profil profil header header"
+                "pict1 pict2 main main"
+                "img img main main"
+                "footer footer footer hello"
+                "end end end end ";
+        }
+
+        .items {
+            border: 1px solid green;
+            display: grid;
+            place-content: center;
+            background-color: rgb(189, 209, 207);
+
+        }
+
+        .items:nth-child(1) {
+            /*grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;*/
+            grid-area: profil;
+        }
+
+        .items:nth-child(2) {
+            grid-area: header;
+        }
+
+        .items:nth-child(3) {
+            grid-area: pict1;
+        }
+
+        .items:nth-child(4) {
+            grid-area: pict2;
+            background-color: blue;
+        }
+
+        .items:nth-child(5) {
+            grid-area: main;
+        }
+
+        .items:nth-child(6) {
+            grid-area: img;
+        }
+
+        .items:nth-child(7) {
+            grid-area: footer;
+        }
+
+        .items:nth-child(9) {
+            grid-area: end;
+            color: whitesmoke;
+        }
+
+        h1 {
+            justify-content: center;
+            color: rgb(201, 91, 91);
+            text-decoration-line: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>CSS GRID &#6664</h1>
+
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+        <div class="items">10</div>
+        <div class="items">11</div>
+        <div class="items">12</div>
+
+    </div>
+    <section>
+        <h2></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci vero veniam et reiciendis quod
+            natus numquam culpa itaque reprehenderit fuga quas, atque unde velit soluta delectus facilis dolorem?
+            Voluptatum, tempora officiis deserunt neque magni itaque dolorem earum, porro cupiditate in aliquid
+            doloremque facilis ullam molestias vero modi numquam voluptatem. ipsum dolor sit amet consectetur
+            adipisicing elit. Corporis suscipit quas ducimus consectetur, facere sed doloremque voluptatum accusantium
+            repellat quis non. Quae amet eaque rerum quis recusandae cum reprehenderit corrupti.</p>
+    </section>
+
+    <button type="button" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+        Custom button
+    </button>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>

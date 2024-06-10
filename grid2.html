@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid2</title>
+    <style>
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 200px ;
+    grid-template-rows: 300px 200px 100px;
+}
+.items {
+    /*width: 100px;
+    height: 100px;*/
+    border: 1px solid red;
+    align-content: center;
+}
+.grid-container:nth-child(1) {
+row-gap: 5px;
+background-color: lightskyblue;
+}
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="items item1">item1</div>
+        <div class="items item2">item2</div>
+        <div class="items item3">item3</div>
+        <div class="items item4">item4</div>
+        <div class="items item5">item5</div>
+        <div class="items item6">item6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-size: 16px;
+            background-color: #fffeee;
+        }
+
+        .navbar,.container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .container {
+            width: 100vw;
+            height: 5em;
+            border: 5px solid red;
+            background-color: rgb(87, 87, 236);
+            display: flex;
+        }
+
+        .navbar,.logo {
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .logo {
+            margin-left: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            max-width: bolder;
+            padding: 5px;
+       margin-right: 10px;
+        }
+        a:hover {
+            background-color: blue;
+        }
+        .nav {
+            display: flex;
+        gr
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar"></nav>
+    <div class="container">
+        <div class="logo">FlexBox</div>
+
+        <ul class="nav">
+            <li><a href="http://" target="_blank">Home</a></li>
+            <li><a href="http://" target="_blank">About</a></li>
+            <li><a href="http://" target="_blank">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+   
+
+</body>
+
+</html>
